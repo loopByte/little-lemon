@@ -47,7 +47,7 @@ export default function BookingForm({ availableTimes, occasions, dispatch, onSub
                 <h1 className="display-title">Table Reservation</h1>
             </div>
             <form className="table_res_form" onSubmit={handleSubmit}>
-                <label htmlFor="fullname">Full Name <span>{touched.fullname && errors.fullname}</span></label>
+                <label htmlFor="fullname">Full Name<span>{touched.fullname && errors.fullname}</span></label>
                 <input
                     className={errors.fullname && touched.fullname ? 'error' : ''}
                     type="text"
@@ -59,7 +59,7 @@ export default function BookingForm({ availableTimes, occasions, dispatch, onSub
                     onBlur={handleBlur}
                 />
 
-                <label htmlFor="emailAddress">Email <span>{touched.emailAddress && errors.emailAddress}</span></label>
+                <label htmlFor="emailAddress">Email<span>{touched.emailAddress && errors.emailAddress}</span></label>
                 <input
                     className={errors.emailAddress && touched.emailAddress ? 'error' : ''}
                     type="text"
@@ -71,7 +71,7 @@ export default function BookingForm({ availableTimes, occasions, dispatch, onSub
                     onBlur={handleBlur}
                 />
 
-                <label htmlFor="resDate">Choose date <span>{touched.resDate && errors.resDate}</span></label>
+                <label htmlFor="resDate">Choose date<span>{touched.resDate && errors.resDate}</span></label>
                 <input
                     className={errors.resDate && touched.resDate ? 'error' : ''}
                     type="date"
@@ -82,7 +82,7 @@ export default function BookingForm({ availableTimes, occasions, dispatch, onSub
                     onBlur={handleBlur}
                 />
 
-                <label htmlFor="resTime">Choose time <span>{touched.resTime && errors.resTime}</span></label>
+                <label htmlFor="resTime">Choose time<span>{touched.resTime && errors.resTime}</span></label>
                 <select
                     className={errors.resTime && touched.resTime ? 'error' : ''}
                     id="resTime"
@@ -94,7 +94,7 @@ export default function BookingForm({ availableTimes, occasions, dispatch, onSub
                     {availableTimes.map((time, index) => <option key={index} value={time}>{time}</option>)}
                 </select>
 
-                <label htmlFor="guests">Number of guests <span>{touched.guests && errors.guests}</span></label>
+                <label htmlFor="guests">Number of guests<span>{touched.guests && errors.guests}</span></label>
                 <input
                     className={errors.guests && touched.guests ? 'error' : ''}
                     type="number"
@@ -108,7 +108,7 @@ export default function BookingForm({ availableTimes, occasions, dispatch, onSub
                     onBlur={handleBlur}
                 />
 
-                <label htmlFor="occasion">Occasion <span>{touched.occasion && errors.occasion}</span></label>
+                <label htmlFor="occasion">Occasion<span>{touched.occasion && errors.occasion}</span></label>
                 <select
                     className={errors.occasion && touched.occasion ? 'error' : ''}
                     id="occasion"
