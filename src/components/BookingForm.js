@@ -121,6 +121,7 @@ export default function BookingForm({ availableTimes, occasions, dispatch, onSub
                 </select>
 
                 <input
+                    aria-label="On Click"
                     type="submit"
                     className="btn primary"
                     value="Make Your reservation"

@@ -16,7 +16,7 @@ export default function ErrorPage() {
             }}>
                 <img
                     src="/error-image.jpg"
-                    alt="Error image"
+                    alt="Error"
                     style={{
                         width: "auto",
                         height: "300px",

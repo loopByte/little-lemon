@@ -41,6 +41,7 @@ ul { list-style: none; }
   font-family: 'Karla', sans-serif;
   font-size: 20px;
   font-weight: var(--fw-extra-bold);
+  text-transform: uppercase;
 }
 .section-categories {
   font-family: 'Karla', sans-serif;
