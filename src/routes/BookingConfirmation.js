@@ -23,7 +23,7 @@ export default function BookingConfirmation() {
                     gap: "20px",
                 }}
             >
-                <h1 className="display-title">Confirmation of Table Reservation</h1>
+                <h1 className="display-title" style={{ textAlign: "center", margin: "10px", }}>Confirmation of Table Reservation</h1>
                 <p
                     className="paragraph"
                     style={{
@@ -31,6 +31,7 @@ export default function BookingConfirmation() {
                         display: "block",
                         maxWidth: "700px",
                         textAlign: "center",
+                        padding: "20px",
                     }}
                 >
                     Your table has been successfully booked! An email has been sent to your provided address with the details.
@@ -40,7 +41,7 @@ export default function BookingConfirmation() {
                     style={{
                         display: "flex",
                         flexDirection: "column",
-                        width: "600px",
+                        maxWidth: "600px",
                         gap: "20px",
                         padding: "20px",
                     }}

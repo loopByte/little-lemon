@@ -9,10 +9,12 @@ export default function Specials() {
 
     return (
         <div className="specials">
-            <h2 className="sub-title">Specials</h2>
-            <button role="link" aria-label="Online Menu" className="btn primary">Online Menu</button>
+            <div className="title_button">
+                <h2 className="sub-title">Specials</h2>
+                <button role="link" aria-label="Online Menu" className="btn primary">Online Menu</button>
+            </div>
             <div className="cards">
-                {specials.map(({title, image, price, description}, index) => <Card key={index} title={title} image={image} price={price} description={description} />)}
+                {specials.map(({ title, image, price, description }, index) => <Card key={index} title={title} image={image} price={price} description={description} />)}
             </div>
         </div>
     )

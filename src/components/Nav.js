@@ -1,18 +1,9 @@
 import { Link } from "react-router-dom"
 
 export default function Nav() {
-    const styles = {
-        display: "flex",
-        justifyContent: "center",
-    }
-
     return (
-        <nav style={styles}>
-            <ul style={{
-                listStyle: "none",
-                display: "flex",
-                gap: "20px",
-            }}>
+        <nav className="navbar">
+            <ul>
                 <li className="card-title">
                     <Link to={`/`}>HOME</Link>
                 </li>
