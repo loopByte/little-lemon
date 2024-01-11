@@ -106,6 +106,7 @@ export default function BookingForm({ availableTimes, occasions, dispatch, onSub
                     value={values.guests}
                     onChange={handleChange}
                     onBlur={handleBlur}
+                    data-testid="guests"
                 />
 
                 <label htmlFor="occasion">Occasion<span>{touched.occasion && errors.occasion}</span></label>
@@ -126,6 +127,7 @@ export default function BookingForm({ availableTimes, occasions, dispatch, onSub
                     className="btn primary"
                     value="Make Your reservation"
                     onClick={handleSubmit}
+                    data-testid="submit"
                 />
             </form>
         </>
