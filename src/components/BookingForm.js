@@ -44,7 +44,7 @@ export default function BookingForm({ availableTimes, occasions, dispatch, onSub
                     alignItems: "center",
                 }}
             >
-                <h1 className="display-title">Table Reservation</h1>
+                <h1 className="display-title" style={{ textAlign: "center" }}>Table Reservation</h1>
             </div>
             <form className="table_res_form" onSubmit={handleSubmit}>
                 <label htmlFor="fullname">Full Name<span>{touched.fullname && errors.fullname}</span></label>
